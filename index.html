@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="bilder/Logo_klein.png">
+
+    <title>Activity Bild</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Vorlese-Popup -->
+    <div id="vorlesePopup" class="popup-overlay">
+        <div class="popup-content">
+            <h3 class="zü3"> <b>Möchtest du, dass die Webseite laut vorgelesen wird?</b></h3>
+            <button class="frage zü3" id="jaVorlesen">Ja</button>
+            <button class="frage zü3" id="neinVorlesen">Nein</button>
+        </div>
+    </div>
+
+    <!-- Ton Button oben rechts  -->
+    <div class="tonFarbeAn tonDiv">
+        <img src="bilder/volume.png" alt="Ton an und aus Schalter" id="ton">
+    </div>
+
+    <!-- Logo -->
+    <div class="farbverlauf">
+        <img class="d-block mx-auto mb-4" src="bilder/logo.png" alt="Buntes Logo des Spiels Activity Blind." width="30%">
+    </div>
+
+
+    <!-- Begrüßung -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <h1>Herzlich willkommen bei Activity Blind!</h1>
+        <p>Dem interaktiven Kartenspiel, welches speziell für Menschen mit Sehbeeinträchtigung entwickelt wurde.</p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="container col-xxl-8 px-4 py-2 nav rounded-4 ">
+        <div class="row align-items-center gx-4 py-4">
+          
+            <div class="col-lg-6">
+              <h2 class="zü">Navigation</h2>
+              <p>Um dich auf der Webseite zu bewegen, kannst du die Pfeiltasten auf der Tastatur verwenden. 
+                Drücke den rechten Pfeil, um zum nächsten Abschnitt zu springen, und den 
+                linken Pfeil, um zum vorherigen zurückzukehren.</p>
+              </div>
+              <div class="col-12 col-sm-12 col-lg-6 ">
+                  <img src="bilder/arrows.png" class="d-block mx-lg-auto img-fluid" alt="Die zu verwendenen Pfeiltasten um auf der Webseite zu navigieren." width="300"  loading="lazy">
+              </div>
+          </div>
+    </div>
+
+    <!-- Spielregeln -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <h2 class="zü">Spielregeln</h2>
+
+        <div>
+            <h3 class="zü3">Ziel des Spiels</h3>
+            <p>Das Ziel ist es, als Team so viele Karten wie möglich zu sammeln, indem Begriffe aus verschiedenen Kategorien richtig erraten werden.</p>
+        </div>
+        <div>
+            <h3 class="zü3">Teamformation</h3>
+            <p>Für das Spiel werden mindestens zwei und maximal vier Teams benötigt, wobei beliebig viel Spieler*innen in einem Team sein können. Um mit allen vier Kategorien 
+                zu spielen sind jedoch drei Spieler pro Team nötig. Bei Auslassung der Kategorie "Stille Post" reichen auch zwei Spieler pro Team. </p>
+        </div> 
+        <div>
+            <h3 class="zü3">Spielvorbereitung</h3>
+            <ol>
+                <li>Bildung der Teams.</li>
+                <li>Jedem Team werden drei Joker in Form von Münzen gegeben, die es erlauben, schwierige Karten zu überspringen.</li>
+                <li>Die Karten werden gemischt und in den Turm gestapelt. </li>
+                <li>Spieler ohne Sehbeeinträchtigung oder mit Restlicht tragen Augenbinden, damit alle Spieler sich ausschließlich auf ihre anderen Sinne verlassen müssen.</li>
+            </ol>
+        </div> 
+        <div>
+            <h3 class="zü3">Spielablauf</h3> 
+            <!-- neue Aktion nötig!!! -->
+            <ol>
+                <li>Die Teams bestimmen die Reihenfolge, in der sie spielen.</li>
+                <li>Das aktive Team startet die Stoppuhr und zieht die unterste Karte aus dem Kartenturm.</li>
+                <li>Ein Mitglied des aktiven Teams nimmt die Rolle des Hinweisgebers an und versucht, den auf der Karte vermerkten Begriff, passend zur vorgegebenen Kategorie, 
+                    seinen Teamkollegen zu vermitteln.</li>
+                <li>Die übrigen Teammitglieder werden zu scharfsinnigen Ratefüchsen, deren Aufgabe es ist, die dargebotenen Hinweise zu deuten und den verborgenen Begriff zu 
+                    entlarven.</li>
+                <li>Wird ein Begriff richtig erraten, darf das Team die nächste Karte ziehen und weitermachen, bis die Zeit abgelaufen ist.</li>
+                <li>Die erratenen Karten werden vom Team gesammelt. Karten, die übersprungen oder nicht erraten wurden, werden beiseitegelegt.</li>
+                <li>Nach Ablauf der Zeit ist das nächste Team an der Reihe.</li>
+            </ol>
+            <p class="fairplay">Fairplay: Das gegnerische Team prüft den Ablauf, um sicherzustellen, dass alle Regeln eingehalten werden.</p>
+        </div> 
+        <div>
+            <h3 class="zü3">Spielende</h3>
+            <p>Das Spiel endet, wenn alle Karten gespielt wurden. Das Team mit den meisten gesammelten Karten gewinnt. </p>
+        </div> 
+        
+
+    </div>
+
+
+
+<!-- Kathegorien -->
+<div class="container col-xxl-8 px-4 py-4 kat rounded-4">
+    <div class="row kathegorie">
+        <div class="col-lg-6 py-6">
+            <h2 class="zü">Kategorien</h2>
+            <p>Begriffe können - abhängig von der gezogenen Kategorie - auf vier unterschiedliche und kreative Weisen vermittelt werden. 
+                Jede Kategorie ist anhand eines besonderen Eckendesign der oberen rechten Ecke erkennbar.</p>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center justify-content-center">
+            <img src="bilder/Karten/hand.png" class="img-fluid" alt="Spielkarten" width="450" loading="lazy">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 p-4 mittig karte k1 rounded-5">
+            <h3 class="zü3">Erklären</h3>
+            <p class="eckenform">Eckenform: Treppestufe</p>
+            <p>Das geheime Wort wird geschickt umschrieben, ohne dieses direkt auszusprechen, seine Bestandteile zu nennen oder sein Gegenteil zu verwenden.</p>
+        </div>
+        <div class="col-lg-6 p-4 mittig karte k2 rounded-5">
+            <h3 class="zü3">Zeichnen</h3>
+            <p class="eckenform">Eckenform: Halbkreis </p>
+            <p>Der Begriff wird auf den Rücken eines Teammitglieds gezeichnet, welcher dann die Aufgabe hat, das Gekritzel zu entschlüsseln und den Begriff zu erraten.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 p-4 mittig karte k3 rounded-5">
+            <h3 class="zü3">Geräusch</h3>
+            <p class="eckenform">Eckenform: Kreis </p>
+            <p>Hier müssen die Mitspielenden kreativ werden und den Begriff allein durch Geräusche vermitteln. Die Kunst liegt darin, die Geräusche so authentisch wie möglich 
+                zu gestalten.</p>
+        </div>
+        <div class="col-lg-6 p-4 mittig karte k4 rounded-5">
+            <h3 class="zü3">Stille Post</h3>
+            <p class="eckenform">Eckenform: Schräge </p>
+            <p>Ein Begriff wird innerhalb des Teams von einer Person zur nächsten geflüstert, in der Hoffnung, dass er unverändert beim letzten Mitglied ankommt. 
+                Wichtig: Der Begriff darf innerhalb des Teams nur einmal weitergegeben werden. Sollte das geheime Wort zu laut ausgesprochen werden und das 
+                gegnerische Team den Begriff richtig erraten, gewinnen diese den Punkt. </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- ------------------------ -->
+
+
+    <!-- Stopp Uhr - Erklärung -->
+    <div class="container col-xxl-8 px-4 py-2 stoppuhr">
+        <div class="row align-items-center gx-4 py-4">              
+            <div class="col-lg-5 col-sm-12">
+                <h2 class="zü">Stoppuhr</h2>
+                <p>Die Stoppuhr kannst du über die Leer- und Enter-Taste bedienen:</p>
+                    <ul>
+                        <li class="highlight">Leer-Taste = <span class="grün">Start</span> / <span class="rot">Stopp</span> </li>
+                        <li class="highlight">Enter-Taste = <span class="blau">Restart</span></li>
+                    </ul>
+            </div>
+            <div class="col-sm-12 col-lg-7">
+                <img src="bilder/tastertur_farbe_z.png" class="d-block mx-lg-auto img-fluid" alt="Tastatur mit hervorgehobenen Tasten zur Bedienung der Stoppuhr."  loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <!-- Stopp Uhr -->
+    <div class="container col-xxl-8 px-4 py-4 ">
+        <div class="grid-container roboto-mono-zahlen ">
+            <div class="uhr card rounded-4" id="timerDisplay">30:00</div>
+            <button class="start card rounded-4" id="startButton"><img src="bilder/start.png" alt="Start Button Stoppuhr" width="40%"></button>
+            <button class="stop card rounded-4" id="breakButton"><img src="bilder/pause.png" alt="Stopp Button Stoppuhr" width="40%"></button>
+            <button class="restart card rounded-4" id="restartButton"><img src="bilder/restart.png" alt="Restart Button Stoppuhr" width="40%"></button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="farbverlauf">
+        <div class="container col-xxl-8 px-4 py-5">
+            <p>Das Spiel <span class="highlight">Activity Blind</span> ist ein Projekt des FH Technikums, entwickelt im Rahmen des Studiengangs Gesundheits- und 
+                Rehabilitationstechnik im Fach Rehabilitationstechnik.</p>
+            <ul>
+                <li>Lisa Riedel: Kartendesign </li>
+                <li>Verena Wolfsöldner: Spielbox </li>
+                <li>Cäcilia Werle: Webseite</li>
+            </ul>
+        </div> 
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>     <!-- jQuerry verlinken -->
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>

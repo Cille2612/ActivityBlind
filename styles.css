@@ -1,0 +1,424 @@
+
+/* -------PopUp------------------------ */
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; /* Startet unsichtbar */
+    z-index: 100; 
+}
+  
+.popup-content {
+    background: rgb(250, 238, 185);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.frage{
+    color: white;
+    border-radius: 20px;
+    border: 5px solid white;
+    width: 30%;
+    height: 150px;
+    font-family: "Sansita", sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: 4px;
+    margin-bottom: 32px;
+}
+
+#jaVorlesen{
+    background-color: #589e58;
+}
+
+#neinVorlesen{
+    background-color: #DF0701;
+}
+  
+/* Machen Sie das Popup sichtbar, wenn es aktiv sein soll */
+.popup-overlay.aktiv {
+    visibility: visible;
+}
+
+@media (max-width: 412px) {
+    #jaVorlesen{
+        font-size: 30px;
+    }
+    #neinVorlesen{
+        font-size: 30px;
+    }
+}
+  
+
+
+
+
+/* ----- Ton Button ------------------------------------------- */
+
+#ton{
+    height: 50px;
+    margin: 10px;
+}
+
+.tonDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    background-color: #109510;
+    border: 4px solid black;
+    border-radius: 50%;
+
+    position: fixed; /* Fixiert das Element an einer Position */
+    top: 15px;      /* Abstand von oben */
+    right: 15px;    /* Abstand von rechts */
+    z-index: 10;  /* Stellt sicher, dass es über anderen Elementen liegt */
+}
+
+.tonFarbeAus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #EA0000;
+    border: 4px solid black;
+}
+
+.tonDiv {
+    cursor: pointer;
+}
+
+
+
+/* ----- Logo Oben -------------------------------------------- */
+
+.farbverlauf{
+    background: rgb(242,227,182);
+    background: radial-gradient(circle, rgba(242,227,182,1) 20%, rgba(45,144,166,1) 100%);
+} 
+
+.logo {
+    display: flex;
+    justify-content: center; /* Zentriert die Inhalte horizontal */
+    align-items: center; /* Zentriert die Inhalte vertikal */
+    height: 100%; /* Setze eine spezifische Höhe oder 100%, falls es innerhalb eines Containers mit definierte Höhe ist */
+}
+
+
+.nav{
+    background-color: rgb(250, 238, 185);
+}
+
+
+
+/* ----- Schriftbild -------------------- */
+
+h1{
+    font-family: "Sansita", sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: 4px;
+    margin-bottom: 32px;
+}
+
+.zü{
+    font-family: "Sansita", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    letter-spacing: 4px;
+    margin-bottom: 32px;
+}
+
+.zü3{
+    font-family: "Sansita", sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    letter-spacing: 4px;
+    margin-bottom: 16px;
+}
+
+p{
+    font-size: 2rem;
+    text-align: left !important;
+    margin-bottom: 32px;
+}
+
+ul{
+    padding-left: 60px;
+    font-size: 2rem;  
+}
+
+ol{
+    font-size: 2rem;
+    margin-bottom: 32px;
+}
+
+.fairplay{
+    color: #109510;
+    font-family: "Sansita", sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.highlight{
+    font-family: "Sansita", sans-serif;
+    font-weight: 550;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    
+}
+
+.mittig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.kat{
+    background-color: rgb(184, 216, 219);
+    padding-bottom:8px;
+   
+}
+
+.stoppuhr{
+    padding-top: 42px !important;
+}
+
+.eckenform{
+    font-family: "Sansita", sans-serif;
+}
+
+
+/*----- Schriftbild anpassen ---------------------------------------------------------------*/
+
+@media (max-width:750px){
+    .frage{font-size: 4rem;}
+}
+
+@media (max-width:650px){
+    .frage{
+        font-size: 3rem;
+        width: 35%;
+        height: 100px;
+    }
+    
+    /* ton butten kleiner */
+    .tonDiv{
+        height: 60px;
+        width: 60px;
+        border: 3px solid black;
+    }
+    #ton{
+        height: 40px;
+        margin: 7px;
+    }
+}
+
+@media (max-width:520px){
+    .frage{font-size: 2.5rem;}
+}
+
+@media (max-width:460px){
+    .frage{font-size: 2rem;}
+}
+
+@media (max-width:410px){
+    .frage{font-size: 1.5rem;}
+}
+
+@media (max-width:500px){
+    h1{font-size: 4rem;} 
+    .zü{font-size: 3.5rem;}
+    .zü3{font-size: 3rem;}
+    p{font-size: 1.5rem;}
+    ul{font-size: 1.5rem;}
+    ol{font-size: 1.5rem;}
+    .fairplay{font-size: 2.5rem;}
+    .highlight{font-size: 1.5rem;}  
+}
+
+@media (max-width:444px){
+    h1{font-size: 3.5rem;} 
+    .zü{font-size: 3rem;}
+    .zü3{font-size: 2.5rem;}
+    p{font-size: 1rem;}
+    ul{font-size: 1rem;}
+    ol{font-size: 1rem;}
+    .fairplay{font-size: 2rem;}
+    .highlight{font-size: 1rem;}  
+}
+
+@media (max-width:380px){
+    h1{font-size: 3rem;} 
+    .zü{font-size: 2.5rem;}
+    .zü3{font-size: 2rem;}
+    p{font-size: 1rem;}
+    ul{font-size: 1rem;}
+    ol{font-size: 1rem;}
+    .fairplay{font-size: 2rem;}
+    .highlight{font-size: 1rem;} 
+    .frage{
+        font-size: 3rem;
+        width: 45%;
+        height: 80px;
+    }
+}
+
+@media (max-width:325px){
+    h1{font-size: 2.5rem;} 
+    .zü{font-size: 2rem;}
+    .zü3{font-size: 1.5rem;}
+    p{font-size: 1rem;}
+    ul{font-size: 1rem;}
+    ol{font-size: 1rem;}
+    .fairplay{font-size: 1.5rem;}
+    .highlight{font-size: 1rem;} 
+}
+
+/* neu */
+
+.karte{
+    
+    border: 10px solid rgb(184, 216, 219);
+    border-radius: 3px;
+    display: flex;
+}
+
+.k1{
+    background-color: #eb6d6c;
+}
+.k2{
+    background-color: #ecbb56;
+}
+.k3{
+    background-color: #84d18b;
+}
+.k4{
+    background-color: #3e9feb;
+}
+
+/* neu */
+.grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 2fr));
+    grid-template-rows: repeat(2, minmax(150px, 2fr));
+}
+  
+
+
+
+/* ---- Stoppuhr Style ------------------- */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 15fr 7fr 7fr 7fr;
+    grid-template-rows: 100px;
+    gap: 10px;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+@media (max-width: 860px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ; /* Ändert das Grid bei kleinen Bildschirmen zu einer einzigen Spalte */
+        grid-template-rows: 1fr  ; /* Erstellt automatische Zeilenhöhen für den Timer und die Buttons */
+    }
+    /* Optional: Anpassung der Größe der Buttons und des Timer-Displays für kleinere Bildschirme */
+    .card {
+        font-size: 20px; /* Kleinere Schriftgröße */
+        height: 100px; 
+    }
+    .uhr{
+        grid-column: span 3;
+    } 
+    #startButton, #breakButton, #restartButton {
+        width: 100%; /* Buttons nehmen die volle Breite ein */
+        z-index: 5; 
+    }
+}
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px ;
+    font-weight: 600;
+    border: 4px solid black;
+}
+
+/* Anpassung der Icons innerhalb der Buttons */
+#startButton img, #breakButton img, #restartButton img {
+    height: 60%; /* Passt die maximale Höhe der Bilder an */
+    width: auto;
+}
+
+@media (max-width:320px) {
+    .card {
+        font-size: 30px; /* Kleinere Schriftgröße */
+        height: 60px; 
+    }
+}
+
+@media (max-width:250px) {
+    .card {
+        font-size: 20px; /* Kleinere Schriftgröße */
+        height: 40px; 
+    }
+}
+
+/* Farbdesign Stoppuhr */
+.uhr{
+    background-color: rgb(250, 238, 185);
+}
+.start{
+    background-color: #109510;
+}
+.stop{
+    background-color: #DF0701;
+}
+.restart{
+    background-color:  #1493c5;
+}
+
+.grün{color: #109510;}
+.rot{color: #DF0701;}
+.blau{color: #1493c5;}
+
+/* Anklicken Stoppuhr */
+.start:hover    {background-color: #26860E;}
+.stop:hover     {background-color: #ab1100}
+.restart:hover  {background-color: #277b9c}
+
+/* Zeit forbei? -> rot leuchten */
+.abgelaufen{
+    background-color: #DF0701;
+}
+
+/* Schriftart monospace für Stoppuhr */
+.roboto-mono-zahlen {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 30px;
+  font-style: normal;
+}
+
+
+
+
+
+
