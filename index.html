@@ -29,18 +29,18 @@
 
     <!-- Ton Button oben rechts  -->
     <div class="tonFarbeAn tonDiv">
-        <img src="bilder/volume.png" alt="Ton an und aus Schalter" id="ton">
+        <img src="bilder/volume.png" alt="Ton an und aus Schalter. Dieser Button regelt die in der Seite selbst eingebaute Audiospur. Er ist für die Menschen da die keinen eigenen Screenreader verwenden. Die Audiospur kann mit drücken des Buttons oder der M Taste an und aus geschaltet werden " id="ton">
     </div>
 
     <!-- Logo -->
     <div class="farbverlauf">
-        <img class="d-block mx-auto mb-4" src="bilder/logo.png" alt="Buntes Logo des Spiels Activity BLiND." width="30%">
+        <img class="d-block mx-auto mb-4" src="bilder/logo.png" alt="Buntes Logo des Spiels Activity blind." width="30%">
     </div>
 
 
     <!-- Begrüßung -->
     <div class="container col-xxl-8 px-4 py-5">
-        <h1>Herzlich willkommen bei Activity BLiND!</h1>
+        <h1>Herzlich willkommen bei Activity BLIND!</h1>
         <p>Dem interaktiven Kartenspiel, welches speziell für Menschen mit Sehbeeinträchtigung entwickelt wurde.</p>
     </div>
 
@@ -50,12 +50,14 @@
           
             <div class="col-lg-6">
               <h2 class="zü">Navigation</h2>
+              <p class="sr-only">Informationsbox zum Naviegeiren über die Webseite bei Verwendung des internen Screenreadres.</p>
+
               <p>Um dich auf der Webseite zu bewegen, kannst du die Pfeiltasten auf der Tastatur verwenden. 
                 Drücke den rechten Pfeil, um zum nächsten Abschnitt zu springen, und den 
                 linken Pfeil, um zum vorherigen zurückzukehren.</p>
               </div>
               <div class="col-12 col-sm-12 col-lg-6 ">
-                  <img src="bilder/arrows.png" class="d-block mx-lg-auto img-fluid" alt="Die zu verwendenen Pfeiltasten um auf der Webseite zu navigieren." width="300"  loading="lazy">
+                  <img src="bilder/arrows.png" class="d-block mx-lg-auto img-fluid" alt="Die zum Navigieren ferwendeten Pfeiltasten." width="300"  loading="lazy">
               </div>
           </div>
     </div>
@@ -71,7 +73,7 @@
         <div>
             <h3 class="zü3">Teamformation</h3>
             <p>Für das Spiel werden mindestens zwei und maximal vier Teams benötigt, wobei beliebig viel Spieler*innen in einem Team sein können. Um mit allen vier Kategorien 
-                zu spielen sind jedoch drei Spieler pro Team nötig. Bei Auslassung der Kategorie "Stille Post" reichen auch zwei Spieler pro Team. </p>
+                zu spielen sind jedoch drei Spieler*innen pro Team nötig. Bei Auslassung der Kategorie "Stille Post" reichen auch zwei Spieler*innen pro Team. </p>
         </div> 
         <div>
             <h3 class="zü3">Spielvorbereitung</h3>
@@ -79,7 +81,7 @@
                 <li>Bildung der Teams.</li>
                 <li>Jedem Team werden drei Joker in Form von Münzen gegeben, die es erlauben, schwierige Karten zu überspringen.</li>
                 <li>Die Karten werden gemischt und in den Turm gestapelt. </li>
-                <li>Spieler ohne Sehbeeinträchtigung oder mit Restlicht tragen Augenbinden, damit alle Spieler sich ausschließlich auf ihre anderen Sinne verlassen müssen.</li>
+                <li>Mitspielende ohne Sehbeeinträchtigung oder mit Restlicht tragen Augenbinden, damit alle Spieler*innen sich ausschließlich auf ihre anderen Sinne verlassen müssen.</li>
             </ol>
         </div> 
         <div>
@@ -117,18 +119,20 @@
                 Jede Kategorie ist anhand eines besonderen Eckendesign der oberen rechten Ecke erkennbar.</p>
         </div>
         <div class="col-lg-6 d-flex align-items-center justify-content-center">
-            <img src="bilder/Karten/hand.png" class="img-fluid" alt="Spielkarten" width="450" loading="lazy">
+            <img src="bilder/Karten/hand.png" class="img-fluid" alt="Spielkarten. Es sind vier Karten mit verschiedenen Farben und Eckdesigns dargestellt. Jede Karte repräsentiert eine Kategorie. " width="450" loading="lazy">
         </div>
     </div>
 
     <div class="row">
         <div class="col-lg-6 p-4 mittig karte k1 rounded-5">
-            <h3 class="zü3">Erklären</h3>
-            <p class="eckenform">Eckenform: Treppestufe</p>
+            
+
+            <h3 class="zü3"> <span class="sr-only"> Kategorie </span> Erklären</h3>
+            <p class="eckenform">Eckenform: Treppenstufe</p>
             <p>Das geheime Wort wird geschickt umschrieben, ohne dieses direkt auszusprechen, seine Bestandteile zu nennen oder sein Gegenteil zu verwenden.</p>
         </div>
         <div class="col-lg-6 p-4 mittig karte k2 rounded-5">
-            <h3 class="zü3">Zeichnen</h3>
+            <h3 class="zü3"> <span class="sr-only"> Kategorie </span> Zeichnen</h3>
             <p class="eckenform">Eckenform: Halbkreis </p>
             <p>Der Begriff wird auf den Rücken eines Teammitglieds gezeichnet, welcher dann die Aufgabe hat, das Gekritzel zu entschlüsseln und den Begriff zu erraten.</p>
         </div>
@@ -136,13 +140,13 @@
 
     <div class="row">
         <div class="col-lg-6 p-4 mittig karte k3 rounded-5">
-            <h3 class="zü3">Geräusch</h3>
+            <h3 class="zü3"> <span class="sr-only"> Kategorie </span> Geräusch</h3>
             <p class="eckenform">Eckenform: Kreis </p>
             <p>Hier müssen die Mitspielenden kreativ werden und den Begriff allein durch Geräusche vermitteln. Die Kunst liegt darin, die Geräusche so authentisch wie möglich 
                 zu gestalten.</p>
         </div>
         <div class="col-lg-6 p-4 mittig karte k4 rounded-5">
-            <h3 class="zü3">Stille Post</h3>
+            <h3 class="zü3"> <span class="sr-only"> Kategorie </span> Stille Post</h3>
             <p class="eckenform">Eckenform: Schräge </p>
             <p>Ein Begriff wird innerhalb des Teams von einer Person zur nächsten geflüstert, in der Hoffnung, dass er unverändert beim letzten Mitglied ankommt. Wichtig: 
                 Der Begriff darf innerhalb des Teams nur einmal weitergegeben werden. Sollte das geheime Wort zu laut ausgesprochen werden und das gegnerische Team den 
@@ -163,7 +167,10 @@
             <div class="col-lg-5 col-sm-12">
                 <h2 class="zü">Stoppuhr</h2>
                 <p>Die Stoppuhr kannst du über die Leer- und Enter-Taste bedienen:</p>
-                    <ul>
+                <span class="sr-only"> Die Leertaste ist die große, schmale Taste unten in der Mitte der Tastatur. Mir ihr startest und pausierts du die Zeit
+                    Die Enter Taste ist die große Taste rechts außen an der Tastatur. Sie ist wie ein auf dem Kopf stehendes L geformt. Mit dieser Taste kann die Stoppuhr zurückgesetzt werden.  
+                    </span>
+                    <ul aria-hidden="true">
                         <li class="highlight">Leer-Taste = <span class="grün">Start</span> / <span class="rot">Stopp</span> </li>
                         <li class="highlight">Enter-Taste = <span class="blau">Restart</span></li>
                     </ul>
@@ -178,16 +185,16 @@
     <div class="container col-xxl-8 px-4 py-4 ">
         <div class="grid-container roboto-mono-zahlen ">
             <div class="uhr card rounded-4" id="timerDisplay">30:00</div>
-            <button class="start card rounded-4" id="startButton"><img src="bilder/start.png" alt="Start Button Stoppuhr" width="40%"></button>
-            <button class="stop card rounded-4" id="breakButton"><img src="bilder/pause.png" alt="Stopp Button Stoppuhr" width="40%"></button>
-            <button class="restart card rounded-4" id="restartButton"><img src="bilder/restart.png" alt="Restart Button Stoppuhr" width="40%"></button>
+            <button class="start card rounded-4" id="startButton"><img src="bilder/start.png" alt="Start Button" width="40%"></button>
+            <button class="stop card rounded-4" id="breakButton"><img src="bilder/pause.png" alt="Stopp Button" width="40%"></button>
+            <button class="restart card rounded-4" id="restartButton"><img src="bilder/restart.png" alt="Restart Button" width="40%"></button>
         </div>
     </div>
 
     <!-- Footer -->
     <div class="farbverlauf">
         <div class="container col-xxl-8 px-4 py-5">
-            <p>Das Spiel <span class="highlight">Activity BLiND</span> ist ein Projekt des FH Technikums, entwickelt im Rahmen des Studiengangs Gesundheits- und 
+            <p>Das Spiel <span class="highlight">Activity BLIND</span> ist ein Projekt des FH Technikums, entwickelt im Rahmen des Studiengangs Gesundheits- und 
                 Rehabilitationstechnik im Fach Rehabilitationstechnik.</p>
             <ul>
                 <li>Lisa Riedel: Kartendesign </li>
